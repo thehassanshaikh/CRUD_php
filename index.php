@@ -50,6 +50,7 @@
         <div class="row justify-content-center">
             <table class="table table-striped table-bordered">
                 <thead>
+                    <th>Id<th>
                     <th>Name</th>
                     <th>Location</th>
                     <th colspan="2">Action</th>
@@ -60,6 +61,7 @@
          while ($row = $result->fetch_assoc()) { ?>
 
                 <tr>
+                    <td><?php echo $row['id'];?></td>
                     <td><?php echo $row['name']; ?></td>
                     <td><?php echo $row['location']; ?></td>
                     <td>
